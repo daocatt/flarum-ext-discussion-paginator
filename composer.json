@@ -1,0 +1,35 @@
+{
+    "name": "gtdxyz/flarum-ext-discussion-paginator",
+    "description": "Flarum DiscussionPage Pagination extension.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "support": {
+        "source": "https://github.com/daocatt/flarum-ext-discussion-paginator"
+    },
+    "authors": [
+        {
+            "name": "Dev",
+            "email": "dev@gtd.xyz"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "Paginator",
+            "icon": {
+                "name": "fas fa-life-ring",
+                "backgroundColor": "#33722d",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Gtdxyz\\DiscussionPaginator\\": "src/"
+        }
+    }
+}
