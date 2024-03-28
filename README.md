@@ -9,6 +9,9 @@ Add pagination to DiscussionPage.
 composer require gtdxyz/flarum-ext-discussion-paginator
 ```
 
+### Demo
+
+[demo link](https://zaowan.xyz/d/34-fen-ye-cha-jian-ce-shi/2)
 
 ### Links
 
