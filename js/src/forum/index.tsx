@@ -6,6 +6,7 @@ import ItemList from 'flarum/common/utils/ItemList';
 import PostStreamState from 'flarum/forum/states/PostStreamState';
 import DiscussionPage from 'flarum/forum/components/DiscussionPage';
 import DiscussionListItem from 'flarum/forum/components/DiscussionListItem';
+import CommentPost from 'flarum/forum/components/CommentPost';
 
 import PostPagination from './components/PostPagination';
 
@@ -126,6 +127,23 @@ app.initializers.add('gtdxyz-discussion-paginator', () => {
       return items;
     }
     return originalFunc();
+  });
+
+
+  // add number to commentpost
+  extend(CommentPost.prototype, 'headerItems', function (items) {
+    const post = this.attrs.post;
+
+    if (post.isHidden()) return;
+
+    items.add(
+      'postnumber',
+      <div className="postNumber">
+        <span>#</span>{post.number()}
+      </div>,
+      0
+    );
+    
   });
   
 });
