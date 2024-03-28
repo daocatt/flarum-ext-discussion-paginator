@@ -20,7 +20,9 @@ export default class Paginator extends Component {
     this.perPage = 20;
     this.perBlock = 5;
     this.listCount = parseInt(this.attrs.listCount);
+    
     this.pageCurrent = parseInt(this.attrs.pageCurrent);
+    
     
     //every 5 page as a page block
     this.pageCount = Math.ceil(this.listCount/this.perPage);

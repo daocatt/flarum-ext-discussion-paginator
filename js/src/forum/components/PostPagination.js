@@ -23,6 +23,8 @@ export default class PostPagination extends Component {
     this.discussion = this.attrs.discussion;
     this.stream = this.attrs.stream;
 
+    this.pageCurrent = Math.round(this.stream.visibleStart/20)+1;
+
     // this.scrollListener = new ScrollListener(this.onscroll.bind(this));
   }
 
@@ -89,7 +91,7 @@ export default class PostPagination extends Component {
 
     items.push(
         <div className="PostStream-pagination" key="pagination">
-          <Paginator listCount={this.stream.discussion.attribute('commentCount')} stream={this.stream} onPageChange={this.attrs.onPageChange} pageCurrent="1" ></Paginator>
+          <Paginator listCount={this.stream.discussion.attribute('commentCount')} stream={this.stream} onPageChange={this.attrs.onPageChange} pageCurrent={this.pageCurrent} ></Paginator>
         </div>
     );
 
