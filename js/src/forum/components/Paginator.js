@@ -136,6 +136,7 @@ export default class Paginator extends Component {
     this.pageCurrent = 1;
     this.stream.goToFirst();
     this.syncPromise();
+    this.attrs.onPageChange(this.pageCurrent);
   }
 
   goToPage(indx) {
