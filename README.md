@@ -11,7 +11,7 @@ composer require gtdxyz/flarum-ext-discussion-paginator
 
 ### Demo
 
-[demo link](https://zaowan.xyz/d/34-fen-ye-cha-jian-ce-shi/2)
+[demo link](https://zwq.me/d/34-fen-ye-cha-jian-ce-shi/2)
 
 ### Links
 
